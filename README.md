@@ -1,30 +1,37 @@
 # INFO 6210 
 Assignment-2
 Professor: Nik Bear Brown Due February 22, 2020
+
 In this assignment, you are assumed to be working for a company called Nerd Analytics and that you are completely in charge of the database. You will create a physical database, normalize, actively stream
 social media data to the database you created in Assignment 1. You can choose to create a new database as well.
 Another group of statisticians and machine learning experts will be using the data that you model, gather, clean and database analyze Social Media for a particular domain (e.g. Games, Film, Databases, Cartoons, Baseball, Pokemon, Music, etc.). Each domain must have entities that represent consumers, producers and companies. For example, for games one must be able to model gamers, game developers and game companies. For music one must be able to model music lovers, musicians and music companies.
 This assignment can be done in pairs, or individually.
+
 Database normalization
 Database normalization is the process of organizing the attributes and tables of a relational database to minimize data redundancy.
 Normalization involves refactoring a table into smaller (and less redundant) tables but without losing information; defining foreign keys in the old table referencing the primary keys of the new ones. The objective is to isolate data so that additions, deletions, and modifications of an attribute can be made in just one table and then propagated through the rest of the database using the defined foreign keys.
 Edgar F. Codd, the inventor of the relational model (RM), introduced the concept of normalization and what we now know as the First normal form (1NF) in 1970. Codd went on to define the Second normal form (2NF) and Third normal form (3NF) in 1971.
+
 Design Requirements
 You will check whether your tables are in First normal form (1NF), Second normal form (2NF) and Third normal form (3NF). If not, you’ll restructure your database so that all of the tables are in Third normal form; that is, you normalize the database.
 1
+
 First normal form (1NF)
 • Each table has a primary key: minimal set of attributes which can uniquely identify a
 record
 • The values in each column of a table are atomic (No multi-value attributes allowed).
 • There are no repeating groups: two columns do not store similar information in the
 same table.
+
 Second normal form (2NF)
 • All requirements for 1st NF must be met.
 • No partial dependencies.
 • No calculated data
+
 Third normal form (3NF)
 • All requirements for 2nd NF must be met.
 • Eliminate fields that do not directly depend on the primary key; that is no transitive dependencies.
+
 Conceptual Model
 Design Requirements
 This can be an extension of your first conceptual model or a new one. Your submission must include:
@@ -36,6 +43,7 @@ Appropriate attributes and keys.
 ER diagrams that illustrate the entire conceptual model.
 The ER diagrams can use standard ER symbols or UML.
 Physical models (i.e. SQL and data) that implement your conceptual models.
+
 Questions
 Questions you must answer about your conceptual model:
 1. What are the ranges, data types and format of all of the attributes in your entities?
@@ -53,6 +61,7 @@ Questions you must answer about your physical model: 1. Are all the tables in 1N
 3. Are all the tables in 3NF?
 Social Media Account
 You need a Social Media account (e.g. Twitter, Facebook, Instagram, etc.) It is recommended that you create a Social Media account separate from your personal one for this class as it will be used for interacting with the Social Media API.
+
 Audit
 • Audit Validity/ Accuracy
 • Audit Completeness
@@ -68,6 +77,7 @@ Professionalism
 • Use Efficient Data Structures and Algorithms
 • Keep Your Code Portable
 • Contribution statement
+
 Design Requirements
 Your submission must include:
 o Sampledatafromeverysource
